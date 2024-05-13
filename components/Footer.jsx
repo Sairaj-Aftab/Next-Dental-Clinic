@@ -34,17 +34,17 @@ const Footer = () => {
             <ul className="flex gap-2 mt-5">
               <li>
                 <a href="">
-                  <i class="fi fi-brands-twitter-alt-circle"></i>
+                  <i className="fi fi-brands-twitter-alt-circle"></i>
                 </a>
               </li>
               <li>
                 <a href="">
-                  <i class="fi fi-brands-facebook"></i>
+                  <i className="fi fi-brands-facebook"></i>
                 </a>
               </li>
               <li>
                 <a href="">
-                  <i class="fi fi-brands-instagram"></i>{" "}
+                  <i className="fi fi-brands-instagram"></i>{" "}
                 </a>
               </li>
             </ul>
