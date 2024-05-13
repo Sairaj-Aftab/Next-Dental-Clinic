@@ -9,8 +9,15 @@ module.exports = {
     colors: {
       "primary-color": "#00bcd4",
       "text-color-black": "rgba(0, 0, 0, 0.8)",
+      "text-color-black2": "rgba(0, 0, 0, 0.5)",
       "text-color-white": "#ffffff",
       "secondary-text-color": "#999999",
+      "secondary-text-color2": "#aaaaaa",
+      "gray-opacity": "#ebebeb",
+      white: "#ffffff",
+    },
+    container: {
+      center: true,
     },
     extend: {
       backgroundImage: {
