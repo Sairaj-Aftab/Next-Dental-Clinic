@@ -8,6 +8,15 @@ i {
   display: inline-block;
 }
 
+/* Swiper Slider */
+.swiper-pagination-bullet {
+  width: 11px !important ;
+  height: 11px !important;
+}
+.swiper-pagination-bullet-active {
+  background-color: #00bcd4 !important;
+}
+
 /* .container {
   @apply xl:w-[1120px] m-auto;
 } */

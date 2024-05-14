@@ -61,12 +61,12 @@ const Navbar = () => {
           {openMenu ? (
             <i
               onClick={() => setOpenMenu(!openMenu)}
-              className="fi fi-rr-cross text-3xl mr-3"
+              className="fi fi-rr-cross text-white text-3xl mr-3"
             ></i>
           ) : (
             <i
               onClick={() => setOpenMenu(!openMenu)}
-              className="fi fi-rr-menu-burger text-3xl mr-3"
+              className="fi fi-rr-menu-burger text-white text-3xl mr-3"
             ></i>
           )}
         </div>

@@ -8,6 +8,7 @@ module.exports = {
   theme: {
     colors: {
       "primary-color": "#00bcd4",
+      black: "#000000",
       "text-color-black": "rgba(0, 0, 0, 0.8)",
       "text-color-black2": "rgba(0, 0, 0, 0.5)",
       "text-color-white": "#ffffff",
