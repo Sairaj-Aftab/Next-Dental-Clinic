@@ -3,6 +3,7 @@ import "@flaticon/flaticon-uicons/css/all/all.css";
 import TopHeader from "@/components/TopHeader";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+// import "react-datepicker/dist/react-datepicker.css";
 import "swiper/css";
 import "./globals.css";
 

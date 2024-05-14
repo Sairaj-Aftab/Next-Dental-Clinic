@@ -1,7 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+* {
+  box-sizing: border-box;
+}
 li,
 a,
 i {
@@ -34,4 +36,21 @@ i {
 }
 .footer .column1 li a i {
   @apply text-white text-xl w-11 h-11 bg-white bg-opacity-30 rounded-full flex justify-center items-center;
+}
+
+/* Appointment Section */
+.appointment-section .appointment-form .group {
+  @apply flex flex-col;
+}
+.appointment-section .appointment-form .group label {
+  @apply text-xs font-semibold text-text-color-white uppercase mb-3;
+}
+.appointment-section .appointment-form .group input,
+select,
+textarea {
+  @apply bg-inherit outline-none border-b border-secondary-text-color3 placeholder:text-secondary-text-color3 text-text-color-white placeholder:text-secondary-text-color3 text-sm font-medium  py-3 focus:border-text-color-white;
+}
+
+.appointment-section .appointment-form .group select {
+  @apply bg-primary-color;
 }

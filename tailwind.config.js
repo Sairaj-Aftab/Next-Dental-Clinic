@@ -14,8 +14,10 @@ module.exports = {
       "text-color-white": "#ffffff",
       "secondary-text-color": "#999999",
       "secondary-text-color2": "#aaaaaa",
+      "secondary-text-color3": "rgba(255, 255, 255, 0.7)",
       "gray-opacity": "#ebebeb",
       white: "#ffffff",
+      inherit: "inherit",
     },
     container: {
       center: true,
