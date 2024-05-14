@@ -8,9 +8,9 @@ i {
   display: inline-block;
 }
 
-.container {
+/* .container {
   @apply xl:w-[1120px] m-auto;
-}
+} */
 
 /* Top Header */
 
