@@ -7,15 +7,17 @@ import ServicesSection from "@/components/ServicesSection";
 import Slider from "@/components/Slider";
 import TestimonialSection from "@/components/TestimonialSection";
 import WelcomeSection from "@/components/WelcomeSection";
+import { getDoctorListData } from "@/lib/getData";
 
-export default function Home() {
+export default async function Home() {
+  const doctorList = await getDoctorListData();
   return (
     <main>
       <Slider />
       <AppointmentFormSection />
       <ServicesSection />
       <WelcomeSection />
-      <DoctorSection />
+      <DoctorSection doctorList={doctorList} />
       <SectionQuote />
       <TestimonialSection />
       <ResultStoriesSection />

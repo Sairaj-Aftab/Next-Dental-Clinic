@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const DoctorCard = ({ img, name, title, social, desc }) => {
+const DoctorCard = ({ img, name, title, social_link, desc }) => {
   return (
     <div className="bg-text-color-white px-5 rounded-md text-center hover:bg-primary-color group relative pb-5">
       <div className="w-full flex justify-center absolute -top-28 left-0 right-0">
@@ -24,22 +24,22 @@ const DoctorCard = ({ img, name, title, social, desc }) => {
       </h3>
       <ul className="flex gap-2 justify-center mb-3">
         <li>
-          <a href="#">
+          <a href="#" target="_blank">
             <i className="fi fi-brands-twitter-alt-circle text-xl bg-primary-color w-10 h-10 rounded-full text-white flex justify-center items-center group-hover:bg-secondary-text-color3"></i>
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="#" target="_blank">
             <i className="fi fi-brands-facebook text-xl bg-primary-color w-10 h-10 rounded-full text-white flex justify-center items-center group-hover:bg-secondary-text-color3"></i>
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="#" target="_blank">
             <i className="fi fi-brands-google text-xl bg-primary-color w-10 h-10 rounded-full text-white flex justify-center items-center group-hover:bg-secondary-text-color3"></i>
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="#" target="_blank">
             <i className="fi fi-brands-instagram text-xl bg-primary-color w-10 h-10 rounded-full text-white flex justify-center items-center group-hover:bg-secondary-text-color3"></i>
           </a>
         </li>

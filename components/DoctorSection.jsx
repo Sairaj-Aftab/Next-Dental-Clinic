@@ -6,11 +6,8 @@ import DoctorCard from "./Card/DoctorCard";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css/pagination";
-import { getDoctorListData } from "@/lib/getData";
 
-const DoctorSection = () => {
-  const doctorList = getDoctorListData();
-  console.log(doctorList);
+const DoctorSection = ({ doctorList }) => {
   return (
     <div className="bg-section-bg1 py-10">
       <div className="lg:container px-5 lg:px-0">
@@ -38,70 +35,17 @@ const DoctorSection = () => {
           }}
           className="h-auto pt-32 pb-10"
         >
-          <SwiperSlide>
-            <DoctorCard
-              img={img}
-              name="Dr. Lloyd Wilson"
-              title="HEAD DENTIST"
-              desc="I am an ambitious workaholic, but apart from that, pretty simple person."
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <DoctorCard
-              img={img}
-              name="Dr. Lloyd Wilson"
-              title="HEAD DENTIST"
-              desc="I am an ambitious workaholic, but apart from that, pretty simple person."
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <DoctorCard
-              img={img}
-              name="Dr. Lloyd Wilson"
-              title="HEAD DENTIST"
-              desc="I am an ambitious workaholic, but apart from that, pretty simple person."
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <DoctorCard
-              img={img}
-              name="Dr. Lloyd Wilson"
-              title="HEAD DENTIST"
-              desc="I am an ambitious workaholic, but apart from that, pretty simple person."
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <DoctorCard
-              img={img}
-              name="Dr. Lloyd Wilson"
-              title="HEAD DENTIST"
-              desc="I am an ambitious workaholic, but apart from that, pretty simple person."
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <DoctorCard
-              img={img}
-              name="Dr. Lloyd Wilson"
-              title="HEAD DENTIST"
-              desc="I am an ambitious workaholic, but apart from that, pretty simple person."
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <DoctorCard
-              img={img}
-              name="Dr. Lloyd Wilson"
-              title="HEAD DENTIST"
-              desc="I am an ambitious workaholic, but apart from that, pretty simple person."
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <DoctorCard
-              img={img}
-              name="Dr. Lloyd Wilson"
-              title="HEAD DENTIST"
-              desc="I am an ambitious workaholic, but apart from that, pretty simple person."
-            />
-          </SwiperSlide>
+          {doctorList?.map((data, index) => (
+            <SwiperSlide>
+              <DoctorCard
+                img={data?.photo}
+                name={data.name}
+                title={data.title}
+                social_link={data?.social_link}
+                desc={data?.description}
+              />
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
     </div>
