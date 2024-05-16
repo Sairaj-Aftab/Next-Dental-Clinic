@@ -1,4 +1,5 @@
 import React from "react";
+import AppointmentForm from "./AppointmentForm";
 
 const AppointmentFormSection = () => {
   return (
@@ -13,78 +14,7 @@ const AppointmentFormSection = () => {
             <h1 className="text-3xl font-medium text-text-color-white mb-6">
               Make An Appointment
             </h1>
-            <form
-              action=""
-              className="appointment-form grid grid-cols-2 gap-y-5 gap-x-4"
-            >
-              <div className="group">
-                <label htmlFor="name">Your Full Name</label>
-                <input id="name" type="text" placeholder="Your Full Name" />
-              </div>
-              <div className="group">
-                <label htmlFor="email">Email Address</label>
-                <input id="email" type="email" placeholder="Email" />
-              </div>
-              <div className="group">
-                <label htmlFor="phone">Phone Number</label>
-                <input
-                  id="phone"
-                  type="email"
-                  placeholder="Your Phone Number"
-                />
-              </div>
-              <div className="group">
-                <label htmlFor="gender">Gender</label>
-                <select name="gender" id="gender">
-                  <option value="">Gender</option>
-                  <option value="male">Male</option>
-                  <option value="female">Female</option>
-                  <option value="other">Other</option>
-                </select>
-              </div>
-              <div className="group">
-                <label htmlFor="age">Age</label>
-                <input id="age" type="number" placeholder="age" />
-              </div>
-              <div className="group">
-                <label htmlFor="appointment-date">Appointment Date</label>
-                <input
-                  id="appointment-date"
-                  type="date"
-                  placeholder="Appointment Date"
-                />
-              </div>
-              <div className="group">
-                <label htmlFor="appointment-time">Appointment Time</label>
-                <input
-                  id="appointment-time"
-                  type="time"
-                  placeholder="Appointment Time"
-                />
-              </div>
-              <div className="group">
-                <label htmlFor="doctor-list">Select a Doctor</label>
-                <select name="doctor-list" id="doctor-list">
-                  <option value="">--Select--</option>
-                  <option value="Dr. Smith">Dr. Smith</option>
-                  <option value="Dr. Johnson">Dr. Johnson</option>
-                  <option value="Dr. Williams">Dr. Williams</option>
-                  <option value="Dr. Brown">Dr. Brown</option>
-                  <option value="Dr. Taylor">Dr. Taylor</option>
-                  <option value="Dr. Martinez">Dr. Martinez</option>
-                  <option value="Dr. Anderson">Dr. Anderson</option>
-                  <option value="Dr. Garcia">Dr. Garcia</option>
-                  <option value="Dr. Wilson">Dr. Wilson</option>
-                </select>
-              </div>
-              <div className="group col-span-2">
-                <label htmlFor="message">Message</label>
-                <textarea name="message" id="message"></textarea>
-              </div>
-              <button className="col-span-2 bg-text-color-white text-primary-color text-base font-medium py-4 rounded-md shadow-md">
-                Send Message
-              </button>
-            </form>
+            <AppointmentForm />
           </div>
           {/* Column 2 */}
           <div className="md:flex-1 bg-white md:bg-inherit px-5 lg:p-0 py-5 lg:py-0">
