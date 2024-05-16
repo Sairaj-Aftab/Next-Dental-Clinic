@@ -16,8 +16,11 @@ module.exports = {
       "secondary-text-color2": "#aaaaaa",
       "secondary-text-color3": "rgba(255, 255, 255, 0.7)",
       "gray-opacity": "#ebebeb",
+      "section-bg1": "#f8f8f8",
+      "section-bg2": "#f0f0f0",
       white: "#ffffff",
       inherit: "inherit",
+      transparent: "transparent",
     },
     container: {
       center: true,

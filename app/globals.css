@@ -10,6 +10,14 @@ i {
   display: inline-block;
 }
 
+/* Section Header Second title */
+.header-title {
+  @apply text-4xl font-medium text-text-color-black mb-5 sm:mb-8;
+}
+.secondary-title {
+  @apply text-sm font-bold text-primary-color mb-2;
+}
+
 /* Swiper Slider */
 .swiper-pagination-bullet {
   width: 11px !important ;

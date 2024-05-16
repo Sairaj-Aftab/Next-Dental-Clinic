@@ -4,7 +4,7 @@ import ServiceCard from "./Card/ServiceCard";
 
 const ServicesSection = () => {
   return (
-    <div className="bg-[#f0f0f0] py-10">
+    <div className="bg-section-bg2 py-10">
       <SectionTitleHeader title1="SERVICES" title2="Toothcare Services" />
       <div className="lg:container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 p-5 lg:p-0">
         <ServiceCard

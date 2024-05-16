@@ -47,26 +47,32 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-          <button className="bg-primary-color font-semibold text-text-color-white text-base p-7">
+          <Link
+            href="/make-appointment"
+            className="bg-primary-color font-semibold text-text-color-white text-base p-7"
+          >
             MAKE AN APPOINTMENT
-          </button>
+          </Link>
         </div>
       </div>
       {/* Mobile Navbar */}
       <div className="md:hidden relative z-10">
-        <div className="flex justify-between items-center bg-white">
-          <button className="bg-primary-color font-semibold text-text-color-white text-base p-5">
+        <div className="flex justify-between items-center bg-primary-color py-2 px-5">
+          <Link
+            href="/make-appointment"
+            className="bg-white font-semibold text-primary-color text-base py-3 px-5 rounded-md"
+          >
             MAKE AN APPOINTMENT
-          </button>
+          </Link>
           {openMenu ? (
             <i
               onClick={() => setOpenMenu(!openMenu)}
-              className="fi fi-rr-cross text-white text-3xl mr-3"
+              className="fi fi-rr-cross text-white text-3xl"
             ></i>
           ) : (
             <i
               onClick={() => setOpenMenu(!openMenu)}
-              className="fi fi-rr-menu-burger text-white text-3xl mr-3"
+              className="fi fi-rr-menu-burger text-white text-3xl"
             ></i>
           )}
         </div>

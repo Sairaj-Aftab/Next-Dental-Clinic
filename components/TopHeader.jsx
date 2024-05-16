@@ -1,6 +1,6 @@
 const TopHeader = () => {
   return (
-    <div className="bg-white px-2 py-3 md:px-0 md:py-5 relative z-50">
+    <div className="bg-white px-5 py-3 md:px-0 md:py-5 relative z-50">
       <div className="flex md:justify-between md:items-center flex-col gap-4 md:flex-row md:gap-0 w-full lg:container">
         <div>
           <h1 className="text-2xl text-primary-color font-bold">TOOTHCARE</h1>

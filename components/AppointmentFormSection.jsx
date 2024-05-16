@@ -2,7 +2,7 @@ import React from "react";
 
 const AppointmentFormSection = () => {
   return (
-    <div className="appointment-section relative py-8 bg-[#f8f8f8]">
+    <div className="appointment-section relative py-8 bg-section-bg1">
       <div className="after:absolute after:top-0 after:left-0 after:bottom-0 after:w-full md:after:w-1/2 after:bg-primary-color after:z-0">
         <div className="flex flex-col gap-10 md:gap-0 md:flex-row lg:container relative z-10">
           {/* Column 1 */}
